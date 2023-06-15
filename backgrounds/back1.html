@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+  
+    .block{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    #background1{
+        background: linear-gradient(red, green, yellow);
+    }
+    #background2{
+        background:linear-gradient(yellow, red, blue);
+    }
+    .big-img{
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background: url("https://github.com/levysouza/HTML5-CSS3-CLASSES/blob/main/exe014/img/img01.jpg?raw=true");
+        background-position: center right;
+    }
+  
+</style>
+<body>
+    <h1>Background Simples</h1>
+    <div class="conteiner">
+        <div id="background1" class="block"> </div>
+    
+        <div id="background2" class="block"></div>
+    
+    </div>
+
+    <h1>Imagem personalizada</h1>
+    <div class="conteiner">
+        <div  class="big-img">
+        </div>
+    </div>
+  
+</body>
+</html>

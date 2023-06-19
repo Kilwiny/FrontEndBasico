@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <div class="formulario">
+                <div class="titulo">
+                    <h1>Cadastro</h1>
+                    <hr>
+                </div>
+
+
+                <div class="elemento">
+                    <label for="usuario">Nome</label>
+                    <input type="text" name="" id="nome" class="texto">
+                </div>
+
+                <div class="elemento">
+                    <label for="email">Email</label>
+                    <input type="email" name="" class="texto" id="email">
+                </div>
+
+                <div class="elemento">
+                    <label for="idade">Idade</label>
+                    <input type="number" class="texto" id="password">
+                </div>
+
+
+                <div class="check" id="checkend">
+                    <input type="checkbox" name="" id="checado">
+                    <label for="check-confirm">De acordo com os termos?</label>
+                </div>
+
+
+                <div class="submit">
+                    <button onclick="confirmar()">Confirmar</button>
+                </div>
+
+                <nav>
+                    <div class="logos">
+                        <a href="https://gmail.com" target="_blank"><img src="imgs/google.png" alt="figura-google"></a>
+
+                    </div>
+                    <div class="logos">
+                        <a href="https://facebook.com" target="_blank"><img src="imgs/facebook (1).png" alt="facebook"></a>
+
+                    </div>
+                    <div class="logos">
+                        <a href="https://outlook.com" target="_blank"><img src="imgs/outlook.png" alt="outlook"></a>
+                    </div>
+                </nav>
+            </div>
+        </form>
+    </main>
+    <script>
+        function confirmar(){
+            let idade = document.getElementById('password')
+            console.log(idade.value)
+        }
+    </script>
+
+
+</body>
+
+</html>
